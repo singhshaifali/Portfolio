@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Shaifali Singh</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Shaifali Singh</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="assets/profile-pic.png" alt="" style="border-radius: 48%;">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <h1 class="title">Shaifali Singh</h1>
+            <p class="section_text_p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/cv.pdf')">
+                Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact
+                    </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/shaifali-singh-572074288/'">
+                <img src="./assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/singhshaifali'">
+                <img src="./assets/gfg.svg" alt="My GFG profile" class="icon" onclick="location.href='https://www.geeksforgeeks.org/user/maxburned/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section_pic-container">
+                <img class="about-pic" src="assets/about-pic.jpg" alt="Profile pic" height="400px" width="300px">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img class="icon" src="assets/experience.png" alt="experience icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br>Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img class="icon" src="assets/education.png" alt="experience icon">
+                        <h3>Education</h3>
+                        <p>Bachelor of Technology <br> Computer Science Student</p>
+
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p style="text-align: center;">
+                        I am a B.Tech 4th-year student specializing in Computer Science. I am a MERN stack developer with a 
+                        focus on frontend development and am actively working on improving my backend skills. Additionally, I have a 
+                        solid understanding of
+                         Data Structures and Algorithms (DSA) in C++ and technical subjects like Database Management Systems (DBMS).
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+     <p class="section_text_p1">Explore My</p>
+     <h1 class="title">Experiences</h1>
+     <div class="experience-details-container">
+        <div class="about-containers">
+           <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>JAVASCRIPT</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>REACT</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>BOOTSTRAP</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+
+            </div>
+           </div>
+           <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development <br>and Programming</h2>
+            <div class="article-container">
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>NODE JS</h3>
+                        <p>Intermediate</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>EXPRESS</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>MONGODB</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>C++</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                    <div>
+                        <h3>DSA(programmer)</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+        
+
+            </div>
+           </div>
+        </div>
+     </div>
+     <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="Projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container" >
+                <div class="article-container">
+                    <img src="assets/Project-1.png" alt="project-1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project One</h2>
+                <h3>Chaska Restro:E-Commerce Website</h3><br>
+                <p>Chaska Restaurant is a full time working website using HTML, CSS, Javascript, mySQL, jsp, servlet and JDBC. User can
+                    register, login to their account, and Also can add to their cart the menu items present in database.
+                    </p><br>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                </div>
+                
+            </div>
+            <div class="details-container color-container" >
+                <div class="article-container">
+                    <img src="assets/Project-2.png" alt="project-2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">Project Two</h2>
+                <h3>Netflix Homepage Clone</h3><br>
+                <p>A Netflix homepage clone using HTML, CSS, and JavaScript replicates the visual design and functionality of the original, featuring a responsive layout, interactive sliders, and dynamic 
+                    content sections. It includes styled banners, movie carousels, and smooth navigation to enhance user interaction</p><br>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com'">Live Demo</button>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="Contact">
+        <p class="section_text_p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon email-icon" class="icon contact-icon">
+                <p><a href="mailto:example@gmail.com">singhshaifali1729@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/shaifali-singh-572074288/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <div class="nav-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Shaifali Singh. All Right Reserved.</p>
+    </footer>
+  <script src="script.js"></script>  
+</body>
+</html>
